@@ -1,0 +1,65 @@
+body{
+    font-family:'Montserrat', sans-serif;
+    background-color:white; 
+    
+
+}
+#inicio {
+    background-image: url("../images/Fondos-01.png");
+    background-size: 100%;
+    height: 70vh;
+}
+.navbar{
+    padding: 0 12%;
+    margin-top: 0.5%;
+}
+.nav-link{
+    color: black !important;
+    text-underline-position: above;
+    text-decoration-line: underline;
+    font-size: 20px;
+}
+.nav-item{
+    width: 250px;
+    text-align: center;
+    line-height: 1.5;
+}
+#contacto input {
+    border-radius: 0%;
+    border-bottom: white;
+}
+.btn {
+    color: white;
+    background-color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    align-items: center;
+    vertical-align: center;
+}
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+#proyecto img{
+    height:260px;
+    width: 100%;
+}
+footer i {
+    font-size: 35px;
+    padding-left: 10%;
+    border: 1px solid;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    padding: 8px 0 0 0;
+    border-radius: 80px;
+    margin: 0 15px;
+    color: black;
+    text-align: center!important
+}
+footer a{
+    color: black;
+}

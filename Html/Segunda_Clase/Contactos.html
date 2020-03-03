@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Contacto</title>
+</head>
+    <style>
+        body{
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            color:hotpink;
+        }
+        /*Comentario Css*/
+        form span{
+            color: indigo;
+        }
+        form {
+            color: maroon;
+        }
+        .boton{
+            background-color: mediumaquamarine;
+            color: maroon;
+            height: 20px;
+            width: 100px;
+        }
+        .boton:hover{
+            background-color: mediumorchid;
+            color: midnightblue;
+        }
+
+        div{
+            text-align:left;
+        }
+       
+        .disabled select{
+            background-color: olivedrab;
+            color: palegoldenrod;
+        }
+        input[type=text], 
+        input [type= correo] select{
+            height: 30px;
+            width: 200px;
+        }
+        textarea{
+            resize: both;
+        }
+   
+        input:focus{
+            background-color:palevioletred;
+        }
+        div{
+            box-sizing: border-box;
+            margin-left: 50px;
+            padding: 5px;
+        }
+        li{
+            float: left;
+            list-style: none;
+            width: 100px;
+        }
+    </style>
+<body>
+    <h1>Escribinos, te respondemos a la brevedad</h1>
+    <header>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </header>
+    <form action="" method="post"></form>
+    <form action="" method="get">
+        
+        <div>
+            <label for="txtNombre">Nombre:</label>
+            <span class="Nombre">*</span>
+            <!--Dibujar una caja de texto-->
+            <input type="text" name="txtNombre" id="txtNombre" required>
+        </div>
+        
+        <div>
+            <label for="">Correo:</label>
+            <span class="Correo">*</span>
+            <input type="email" name="txtCorreo" id="txtCorreo"required>
+        </div>
+
+        <div>
+            <label for="">Fecha de Nacimiento:</label>
+            <span class="Fecha de Nacimiento">*</span>
+            <input type="date" name="" id="">
+        </div>
+
+        <div>
+            <label for="txtAsunto">Asunto:</label>
+            <span class="Asunto">*</span>
+                <select name="lstAsunto" id="lstAsunto">    
+                    <option value=""disabled selected>Seleccionar</option>
+                    <label for="Paises de origen">Paises de origen</label>
+                    <optgroup label="America">
+                        <option value="Ar">Argentina</option>
+                        <option value="Br">Brasil</option>
+                        <option value="Cl">Chile</option>
+                    </optgroup>
+                    <optgroup label="Europa">
+                        <option value="Fr">Francia</option>
+                        <option value="Es">España</option>
+                        <option value="Al">Alemania</option>
+                    </optgroup>
+                    </select>
+        </div>
+
+        
+        <div>
+            <label for="txtTelefono">Telefono:</label>
+
+            <span class="Telefono">*</span>
+            <input type="text" name="txtTelefono" id="txtTelefono" placeholder="Ej. (+54) 0000-0000" required> 
+        </div>
+
+        
+        <div>
+            <label for="txtMensaje">Mensaje:</label> 
+            <span class="Mensaje">*</span>
+            <textarea name="" id="" cols="150" rows="10"required></textarea>
+            
+        </div>
+    
+        <div>
+            <input type="submit" value="Enviar" class="boton">
+        </div>
+
+        <div>
+            <label for="">¿Es mayor de edad?</label>
+            Si <input type="radio" name="optMayor" id="optMayorSi">
+            No <input type="radio" name="optMayor" id="optMayorNo">
+        </div>
+
+        <div>
+            <label for="checkbox">Deseo suscribirme para mas novedades</label>
+            <input type="checkbox" name="" id="">
+        </div>
+        <div>
+            <label for="checkbox">Acepto terminos y condiciones de la página</label>
+            <input type="checkbox">
+        </div>
+    </form>
+
+</body>
+</html>
